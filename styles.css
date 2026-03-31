@@ -1,1 +1,105 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
+.profile-card {
+    background: white;
+    width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.user-info {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.profile-img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #eee;
+}
+
+.details h2, .about-section h2, .skills-container h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details p, .about-section p {
+    color: #666;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-section {
+    flex: 1;
+    border-left: 1px solid #eee;
+    padding-left: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Skills Styling */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-item {
+    width: 100%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.skill-info i {
+    margin-right: 8px;
+    color: #1877f2;
+}
+
+.progress-bar {
+    background: #e9ecef;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background: linear-gradient(90deg, #1877f2, #00d2ff);
+    height: 100%;
+    border-radius: 5px;
+}
